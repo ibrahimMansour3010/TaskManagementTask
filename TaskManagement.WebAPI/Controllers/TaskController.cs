@@ -37,6 +37,8 @@ namespace TaskManagement.WebAPI.Controllers
         }
         [HttpGet]
         [Route("GetAllPaged")]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> GetAllPaged([FromQuery]int page=1,int pageSize =3)
         {
             try
@@ -50,7 +52,7 @@ namespace TaskManagement.WebAPI.Controllers
             }
         }
         [HttpGet]
-        [Route("GetById/{id}")]
+        [Route("GetById/{Id}")]
         public async Task<IActionResult> GetById(Guid Id)
         {
             try
