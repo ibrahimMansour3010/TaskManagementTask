@@ -3,7 +3,7 @@
 ## Description
 
 This project allows you to run and create/seeds required data, apply authorized based on permission and roles, and apply DDD pernciples.
-this project has been build using .NET core 7
+this project has been build using .NET core 7 and MS SQL Server 
 It includes two controllers:
 1. **AccountController**
    - Registeration and login APIs
